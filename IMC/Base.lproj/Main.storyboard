@@ -66,8 +66,11 @@
                                 <state key="normal" title="Calcular">
                                     <color key="titleColor" red="0.036417951805460487" green="0.6142132846460957" blue="0.67778165295484538" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bI2-5T-emJ"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGG-SH-CZk">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGG-SH-CZk">
                                 <rect key="frame" x="0.0" y="306" width="414" height="556"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu Índice de Massa Corporal é" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpW-eZ-7zg">
@@ -132,6 +135,13 @@
                             <constraint firstItem="fc3-2r-mt3" firstAttribute="centerX" secondItem="Dta-1C-hA1" secondAttribute="centerX" id="ro5-tQ-S0B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ivResult" destination="ou4-hA-1YX" id="WDV-al-18j"/>
+                        <outlet property="lbResult" destination="7au-Ha-J69" id="KYG-JE-cod"/>
+                        <outlet property="tfHeight" destination="fdC-pQ-BCW" id="iNP-78-vNv"/>
+                        <outlet property="tfWeight" destination="fc3-2r-mt3" id="w0s-4i-cne"/>
+                        <outlet property="viResult" destination="SGG-SH-CZk" id="TLg-bd-auj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

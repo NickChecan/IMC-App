@@ -31,6 +31,10 @@ class ViewController: UIViewController {
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true) // Close keyboard when touch the screen
+    }
+    
     func showResults() {
         var result: String = ""
         var image: String = ""
@@ -55,6 +59,7 @@ class ViewController: UIViewController {
         lbResult.text = result
         ivResult.image = UIImage(named: image)
         viResult.isHidden = false
+        view.endEditing(true) // Remove focus from text field and close keyboard
     }
     
 }

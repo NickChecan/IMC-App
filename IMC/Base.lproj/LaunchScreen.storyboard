@@ -15,13 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Eye-bq-pau">
-                                <rect key="frame" x="0.0" y="61" width="414" height="760"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Eye-bq-pau">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.04533037543" green="0.69280809160000001" blue="0.75687658790000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Eye-bq-pau" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0Di-rg-waC"/>
+                            <constraint firstItem="Eye-bq-pau" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5fL-8o-e8D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Eye-bq-pau" secondAttribute="bottom" id="8OQ-tE-Kmv"/>
+                            <constraint firstItem="Eye-bq-pau" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="976-Oj-Tmr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
